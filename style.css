@@ -1,0 +1,106 @@
+/* Inspiration: https://media.istockphoto.com/vectors/cartoon-funny-calculator-smiles-vector-id1139440824?k=20&m=1139440824&s=612x612&w=0&h=xTaIk10rkh7DPpuVNo9c_GdkW2R-X85DsyGyh5Z-Fqs= */
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.aligncenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translate(-50%, -50%); /* Firefox */
+  -ms-transform: translate(-50%, -50%);  /* IE 9 */
+  -webkit-transform: translate(-50%, -50%); /* Safari and Chrome*/
+  -o-transform: translate(-50%, -50%); /* Opera */
+  transform: translate(-50%, -50%);
+}
+
+#contour {
+  background-color: #AC6867;
+  width: 430px;
+  height: 680px;
+  border: 5px solid #2F1E20;
+  filter: drop-shadow(0 2px 2px rgb(45, 45, 45));
+  border-radius: 45px;
+}
+
+#calculator{
+  background-color: #80A886;
+  position: absolute;
+  width: 350px;
+  height: 600px;
+  padding: 25px;
+  border-radius: 45px;
+  border: 5px solid #2F1E20;
+  bottom: 0px;
+  left: -15px;
+  bottom: -15px;
+}
+
+#digitwrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 10px;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  filter: drop-shadow(0 2px 2px rgb(45, 45, 45));
+}
+
+/* display */
+#screen {
+  flex: 100%;
+  border: 3px solid #2F1E20;
+  border-radius: 45px 42px 37px 47px;
+  padding: 15px;
+  height: 75px;
+  text-align: center;
+  background-color: #E8E5D2;
+  margin-bottom: 10px;
+}
+
+#screen p {
+  font-family: 'Indie Flower', cursive;
+  font-size: 75px;
+  margin: 0px;
+  line-height: 85px;
+}
+
+/* digit buttons */
+.digit {
+  background-color: #E8E5D2;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  border: 3px solid #2F1E20;
+	filter: drop-shadow(0 2px 2px rgb(45, 45, 45));
+  transition: all .1s ease-in-out;
+}
+
+.digit:nth-child(1n+1) {border-radius: 47px 51px 44px 49px;}
+.digit:nth-child(3n+3) {border-radius: 46px 41px 49px 45px;}
+.digit:nth-child(4n+4) {border-radius: 42px 47px 41px 39px;}
+.digit:nth-child(5n+5) {border-radius: 45px 42px 37px 47px;}
+
+.digit:hover {
+  transform: scale(1.1); 
+}
+
+.digit p {
+  font-family: 'Indie Flower', cursive;
+  font-size: 65px;
+  margin: 0px;
+}
+
+/* calculation buttons */
+.calc {
+  width: 60px;
+  height: 60px;
+  background-color: #b9c6b9;
+}
+
+.calc p {
+  font-family: 'Indie Flower', cursive;
+  font-size: 45px;
+  margin: 0px;
+}
+
